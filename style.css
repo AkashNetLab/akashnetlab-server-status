@@ -1,0 +1,119 @@
+/**
+ * Product Name: AkashNetLab Server Status Page
+ * Copyright © 2025 AkashNetLab
+ * Developer: AkashNetLab
+ * Email: opensource [at] AkashNetLab [dot] dev
+ *
+ * Date: 2025
+ */
+
+body {
+    font-family: 'Segoe UI', 'Liberation Sans', sans-serif;
+    background: linear-gradient(111deg, #e1e8f0 0%, #f6f8fc 100%);
+    margin: 0;
+    min-height: 100vh;
+    color: #26293a;
+}
+
+.status-dashboard {
+    max-width: 1080px;
+    margin: 36px auto 0 auto;
+    background: #fafbfe;
+    border-radius: 14px;
+    box-shadow: 0 6px 36px 0 rgba(56, 76, 128, 0.11);
+    padding: 32px 30px 38px 30px;
+}
+
+.status-dashboard > header h1 {
+    font-size: 2.1rem;
+    letter-spacing: 0.03em;
+    color: #1b2e58;
+    margin: 0 0 18px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.status-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 9px;
+    overflow: hidden;
+    margin-top: 12px;
+    font-size: 1.06rem;
+    background: #fff;
+    table-layout: fixed;
+}
+
+.status-table th,
+.status-table td {
+    padding: 13px 16px;
+    border-bottom: 1.5px solid #e6e9f2;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Alignment: First column left, others centered */
+.status-table th:first-child,
+.status-table td:first-child {
+    text-align: left;
+    width: 37%;
+}
+
+.status-table th:not(:first-child),
+.status-table td:not(:first-child) {
+    text-align: center;
+}
+
+.status-table th:nth-child(2),
+.status-table td:nth-child(2) {
+    width: 22%;
+}
+.status-table th:nth-child(3),
+.status-table td:nth-child(3) {
+    width: 13%;
+}
+.status-table th:nth-child(4),
+.status-table td:nth-child(4) {
+    width: 28%;
+}
+
+.status-table th {
+    background: #dde6f7;
+    color: #263045;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    border-top: 1.5px solid #e6e9f2;
+    border-bottom: 2px solid #b9c7dc;
+}
+
+.status-table tr:last-child td {
+    border-bottom: none;
+}
+
+.status {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    font-size: 1.02em;
+    padding: 4px 14px 4px 10px;
+    border-radius: 7px;
+    display: inline-block;
+    min-width: 84px;
+    text-align: center;
+    background: #f7f9fd;
+    transition: background 0.2s, color 0.2s;
+}
+
+.status-online {
+    background: #e4fbe8;
+    color: #2d7f3a;
+    box-shadow: 0 0 0 1.5px #b2e5c0 inset;
+}
+
+.status-offline {
+    background: #fbe4e4;
+    color: #b32c2c;
+    box-shadow: 0 0 0 1.5px #e5b2b2 inset;
+}
